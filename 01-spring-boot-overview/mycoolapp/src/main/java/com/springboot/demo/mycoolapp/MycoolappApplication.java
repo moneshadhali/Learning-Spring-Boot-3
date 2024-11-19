@@ -44,6 +44,6 @@ public class MycoolappApplication {
 	We can specify the java version we want to use specifically after spring boot starter parent by overriding inside the <properties> section eg: including <java.version>18</java.version>
 
 	LESSON 6
-	
+
 	 */
 }
