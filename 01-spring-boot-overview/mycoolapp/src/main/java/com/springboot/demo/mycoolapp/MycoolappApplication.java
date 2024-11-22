@@ -23,7 +23,7 @@ public class MycoolappApplication {
 	In summary, Maven simplifies the process of managing libraries and building your Java projects efficiently, acting as a “friendly helper” that streamlines development efforts.
 
 	LESSON 2
-	mvnw and mvnw.cmd - checks to make sure the computer has maven installed. If they don't then install the maven (one file is for windows and the other for mac file)
+	mvnw and mvnw.cmd - checks to make sure the computer has maven installed. If they don't then install the maven (one file is for windows and the other for mac file). Also allows you to run a Maven Project
 	src/main/java - where the source code resides
 	src/main/resources - The src/main/resources directory in a Maven project is where you store configuration files and resources that your application needs at runtime. This could include properties files, XML files, and any other non-Java resources.
 	src/test - where the test files sources resides
