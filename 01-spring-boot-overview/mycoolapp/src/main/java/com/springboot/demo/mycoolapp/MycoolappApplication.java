@@ -52,5 +52,12 @@ public class MycoolappApplication {
 		/actuator/info: Displays arbitrary information related to the application.
 	Ease of Use: The actuator gives you DevOps functionalities out-of-the-box, which means you can quickly see if your application is running as expected and access detailed metrics regarding performance.
 	Customization and Security: You can customize the information provided by the /actuator/info endpoint in your application properties. Additionally, it's crucial to secure these endpoints to prevent unauthorized access to sensitive application data.
-	 */
+
+	LESSON 7
+	we can run this project using command line:
+	1. Package the app using mvnw package
+	2. Run app: java -jar project.jar
+	3. Run app using maven spring boot maven plugin, mvnw spring-boot:run
+
+	*/
 }
