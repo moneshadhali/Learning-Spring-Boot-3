@@ -22,7 +22,12 @@ public class MycoolappApplication {
 	2. Use spring boot maven plugin: mvnw spring-boot:run
 
 	Further we can use the maven plugin to packge or run the app.
+	MAC
 	1. $ ./mvnw package
 	2. $ ./mvnw spring-boot:run
+
+	WINDOWS
+	1. mvnw package and access in the same directory using target\appname.0.0.1.SNAPSHOOT.jar
+	2. mvnw spring-boot:run
 	*/
 }
