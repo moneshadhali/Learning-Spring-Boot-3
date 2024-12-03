@@ -41,3 +41,19 @@ To check what’s inside the starter/dependencies (which is included in pom.xml 
 ## LESSON 5
 You can specify the Java version you want to use (in pom.xml file) after `spring-boot-starter-parent` by overriding it in the `<properties>` section, e.g., including:
 <java.version>18</java.version>
+
+---
+
+## LESSON 6
+**Spring Boot Actuator** is a component of Spring Boot that allows you to monitor and manage your application. Here’s a breakdown of its key features and functionalities:
+
+1. **Monitoring and Management**: Actuator exposes various endpoints that provide vital information about the health, metrics, and status of your application. This is essential for maintaining operational efficiency, especially in production environments.
+2. **Automatic Endpoints**: By adding the `spring-boot-starter-actuator` dependency to `pom.xml`, you gain access to several RESTful endpoints without writing additional code. These endpoints are prefixed with `/actuator`. Common endpoints include:
+   - `/actuator/health`: Checks and reports the application's health status.
+   - `/actuator/info`: Displays arbitrary information related to the application.
+3. **Ease of Use**: Actuator provides DevOps functionalities out-of-the-box, enabling quick checks to ensure your application is running as expected and accessing detailed performance metrics.
+4. **Customization and Security**:
+   - Customize the information provided by the `/actuator/info` endpoint in your application properties.
+   - Secure these endpoints to prevent unauthorized access to sensitive application data.
+
+---
