@@ -54,6 +54,9 @@ You can specify the Java version you want to use (in pom.xml file) after `spring
 
 
 ## LESSON 7
+- Since Spring Boot is being used, the server is **embedded in the JAR file**.
+- This means that Spring Boot applications are **self-contained**, and there is no need to have a separate server installed.
+
 You can run this project using the command line:
 1. Package the app using:
    ```
@@ -65,5 +68,31 @@ You can run this project using the command line:
    ```
 3. Run the app using Maven Spring Boot Maven Plugin:
    ```
+   mvnw spring-boot:run
+   ```
+
+
+### Using Maven Plugin to Package or Run the App 
+### For Mac/Linux
+1. Package the app:
+   ```bash
+   ./mvnw package
+   ```
+2. Run the app:
+   ```bash
+   ./mvnw spring-boot:run
+   ```
+
+### For Windows:
+1. Package the app:
+   ```bash
+   mvnw package
+   ```
+   Then access the JAR file in the same directory using:
+   ```
+   target\appname.0.0.1.SNAPSHOT.jar
+   ```
+2. Run the app:
+   ```bash
    mvnw spring-boot:run
    ```
