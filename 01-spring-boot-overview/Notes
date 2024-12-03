@@ -57,3 +57,20 @@ You can specify the Java version you want to use (in pom.xml file) after `spring
    - Secure these endpoints to prevent unauthorized access to sensitive application data.
 
 ---
+
+
+## LESSON 7
+You can run this project using the command line:
+1. Package the app using:
+   ```
+   mvnw package
+   ```
+2. Run the app:
+   ```
+   java -jar project.jar
+   ```
+3. Run the app using Maven Spring Boot Maven Plugin:
+   ```
+   mvnw spring-boot:run
+   ```
+```
