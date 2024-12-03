@@ -10,7 +10,6 @@ Maven is a project management tool that helps developers manage their applicatio
 
 In summary, Maven simplifies the process of managing libraries and building your Java projects efficiently, acting as a “friendly helper” that streamlines development efforts.
 
----
 
 ## LESSON 2
 - **`mvnw` and `mvnw.cmd`**: Checks to make sure the computer has Maven installed. If not, it installs Maven (one file is for Windows, and the other is for Mac). It also allows you to run a Maven project.
@@ -19,7 +18,6 @@ In summary, Maven simplifies the process of managing libraries and building your
   - `src/main/resources`: Where you store configuration files and resources your application needs at runtime (e.g., properties files, XML files).
   - `src/test`: Where the test file sources reside.
 
----
 
 ## LESSON 3
 **Adding Dependencies**:
@@ -31,19 +29,16 @@ In summary, Maven simplifies the process of managing libraries and building your
 - Spring Data JPA
 - Thymeleaf
 
----
 
 ## LESSON 4
 To check what’s inside the starter/dependencies (which is included in pom.xml file):
 1. Navigate to `View > Tool Windows > Maven Projects > Dependencies`.
 
----
 
 ## LESSON 5
 You can specify the Java version you want to use (in pom.xml file) after `spring-boot-starter-parent` by overriding it in the `<properties>` section, e.g., including:
 <java.version>18</java.version>
 
----
 
 ## LESSON 6
 **Spring Boot Actuator** is a component of Spring Boot that allows you to monitor and manage your application. Here’s a breakdown of its key features and functionalities:
@@ -56,8 +51,6 @@ You can specify the Java version you want to use (in pom.xml file) after `spring
 4. **Customization and Security**:
    - Customize the information provided by the `/actuator/info` endpoint in your application properties.
    - Secure these endpoints to prevent unauthorized access to sensitive application data.
-
----
 
 
 ## LESSON 7
@@ -74,4 +67,3 @@ You can run this project using the command line:
    ```
    mvnw spring-boot:run
    ```
-```
