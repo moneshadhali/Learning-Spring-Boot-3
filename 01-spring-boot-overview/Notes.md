@@ -53,6 +53,30 @@ You can specify the Java version you want to use (in pom.xml file) after `spring
    - Secure these endpoints to prevent unauthorized access to sensitive application data.
 
 
+Spring Boot Actuator provides RESTful API features to monitor and manage the status of the application itself.
+
+### Key Features
+- Actuator has a specified number of endpoints by default, which can be accessed or configured in `application.properties`.
+- If a wildcard `*` is used to expose all endpoints, you can access them using paths like:
+  - **`http://localhost:8080/actuator/beans`**: Lists all the beans in the application.
+  - **`http://localhost:8080/actuator/threaddump`**: Lists all the threads running in the application, useful for analyzing and profiling application performance.
+  - **`http://localhost:8080/actuator/mappings`**: Lists all the request mappings in the application, useful for identifying available request mappings.
+
+### Configuring Endpoints
+- **Expose Individual Endpoints**:
+  Use a comma-delimited list to specify which endpoints to expose:
+  ```properties
+  management.endpoints.web.exposure.include=*
+  or
+  management.endpoints.web.exposure.include=health,info
+  ```
+- **Exclude Individual Endpoints**:
+  You can also exclude specific endpoints (they will not be viewable even if security is in place):
+  ```properties
+  management.endpoints.web.exposure.exclude=health,info
+  ```
+
+
 ## LESSON 7
 - Since Spring Boot is being used, the server is **embedded in the JAR file**.
 - This means that Spring Boot applications are **self-contained**, and there is no need to have a separate server installed.
